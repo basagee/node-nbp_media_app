@@ -1,19 +1,18 @@
-dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait init=/bin/sh
- 
-8. 마을 방송을 위해서 필요한 package설치 
-	- 아래 명령들을 순서대로 수행하여 설치
-	- $> sudo apt-get install libv4l-dev libx264-dev libssl-dev libasound2-dev asterisk libopus-dev
-	- $> sudo apt-get install alsa	 : 실제로 없는 패키지로 실행할 필요 없음.
-	- $> sudo apt-get install alsa-base
-	- $> sudo apt-get install alsa-utils
-	- $> sudo apt-get install alsa-tools
-	- $> sudo apt-get install libasound2-plugins
-	- $> sudo apt-get install libasound2
-	- $> sudo apt-get install libasound2-dev
-	- $> sudo apt-get install libasound-dev : 위에서 설치한 libasound2-dev로 대체됨. 설치할 필요 없음.
-	- $> sudo apt-get install build-essential libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile-dev libudev-dev libjpeg-dev libtiff5-dev libwebp-dev automake
 
-10. Sound Setting
+## Prerequisite
+
+0. Raspberry pi 3 설치 
+	* 
+
+1. 마을 방송을 위해서 필요한 package설치 
+	- 아래 명령들을 순서대로 수행하여 설치
+	- $> sudo apt-get install libv4l-dev libx264-dev libssl-dev asterisk libopus-dev
+	- $> sudo apt-get install alsa-base alsa-utils alsa-tools
+	- $> sudo apt-get install libasound2 libasound2-plugins libasound2-dev
+
+	- $> sudo apt-get install build-essential libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile1-dev libudev-dev libjpeg-dev libtiff5-dev libwebp-dev automake
+
+2. Sound Setting
 	- alsa를 위해서 관련 모듈들을 로드한다. 이를 위해서 /etc/moduels파일에 아래 내용을 넣는다.
 	- $> sudo vi /etc/modules
 		# added modules for audio
