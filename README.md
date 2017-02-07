@@ -1,20 +1,33 @@
-
 ## Prerequisite
 
-0. Raspberry pi 3 설치 
-	* 
+#### 0. Raspberry pi 3 설치 
+    
+* rasbian 최신 버전 설치 
+* keyboard 설정 
+	* USA 또는 Korean
+* VNC, ssh 활성화 
+	* ssh 설정 시 정상동작 하지 않을 수 있음. 아래와 같이 키 재생성 후 서비스 재시작
+        * $> sudo rm /etc/ssh/ssh_host_* && dpkg-reconfigure openssh-server
+        * $> sudo systemctl restart sshd
+    * 비밀번호 변경 - ssh 사용시 기본 비밀번호는 안됨.
+    * 한글설정 
+        * LANG : ko_KR.UTF-8 
+        * $> sudo apt-get install ibus ibus-hangul ttf-unfonts-core
+* reboot system 
 
-1. 마을 방송을 위해서 필요한 package설치 
-	- 아래 명령들을 순서대로 수행하여 설치
-	- $> sudo apt-get install libv4l-dev libx264-dev libssl-dev asterisk libopus-dev
-	- $> sudo apt-get install alsa-base alsa-utils alsa-tools
-	- $> sudo apt-get install libasound2 libasound2-plugins libasound2-dev
+#### 1. 마을 방송을 위해서 필요한 package설치 
+* $> sudo apt-get install libv4l-dev libx264-dev libssl-dev asterisk libopus-dev
+* $> sudo apt-get install alsa-base alsa-utils alsa-tools
+* $> sudo apt-get install libasound2 libasound2-plugins libasound2-dev
 
-	- $> sudo apt-get install build-essential libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile1-dev libudev-dev libjpeg-dev libtiff5-dev libwebp-dev automake
+* $> sudo apt-get install build-essential libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile1-dev libudev-dev libjpeg-dev libtiff5-dev libwebp-dev automake
 
-2. Sound Setting
-	- alsa를 위해서 관련 모듈들을 로드한다. 이를 위해서 /etc/moduels파일에 아래 내용을 넣는다.
-	- $> sudo vi /etc/modules
+#### 2. Sound Setting
+* alsa를 위해서 관련 모듈들을 로드한다. 이를 위해서 /etc/moduels 파일에 아래 내용을 넣는다.
+* $> sudo vi /etc/modules
+
+
+```
 		# added modules for audio
 		snd_bcm2835
 		# snd_soc_bcm2708
@@ -23,18 +36,20 @@
 		snd-soc-pcm1794a
 		snd_soc_rpi_dac
 		snd-dummy 
- 
-11. 모듈 로드 및 세팅 완료를 위해서 시스템을 재부팅한다. 
-	- $> sudo reboot
+```
 
+* Reboot system
 
+<br>
+
+## Media application compile
 
 9 pjsip 설치
 	- 압축파일을 해제 
 		- $> tar xvfj pjproject-2.6.tar.bz2
 	- 컴파일 
 		- $> cd pjproject-2.6/
-		- $> ./configure –disable-video –with-opus –disable-libwebrtc
+		- $> ./configure -disable-video -with-opus -disable-libwebrtc
 		- $> make dep 
 		- $> make
 	- 설정파일 생성

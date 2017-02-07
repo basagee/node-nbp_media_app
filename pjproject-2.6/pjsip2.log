@@ -1,0 +1,558 @@
+15:51:44.841 sip_endpoint.c  .Module "mod-pjsua-log" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-tsx-layer" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-stateful-util" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-ua" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-100rel" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-pjsua" registered
+15:51:44.842 sip_endpoint.c  .Module "mod-invite" registered
+15:51:44.842   pjsua_core.c  .Trying STUN server town.nbplus.kr (1 of 1)..
+15:51:44.855    stunresolve  ..TX 36 bytes STUN message to 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding request
+ Hdr: length=16, magic=2112a442, tsx_id=10587a4518f4315f0001221c
+ Attributes:
+  SOFTWARE: length=12, value="pjnath-2.6.0"
+--- end of STUN message ---
+
+15:51:44.855  utsx0x18af8e4  ..STUN client transaction created
+15:51:44.855  utsx0x18af8e4  ..STUN sending message (transmit count=1)
+15:51:44.955     alsa_dev.c  ..Added sound device sysdefault:CARD=ALSA
+15:51:44.966     alsa_dev.c  ..Added sound device dmix:CARD=ALSA,DEV=0
+15:51:44.973     alsa_dev.c  ..Added sound device dmix:CARD=ALSA,DEV=1
+15:51:44.983     alsa_dev.c  ..Added sound device hw:CARD=ALSA,DEV=0
+15:51:44.985     alsa_dev.c  ..Added sound device hw:CARD=ALSA,DEV=1
+15:51:44.986     alsa_dev.c  ..Added sound device plughw:CARD=ALSA,DEV=0
+15:51:44.987     alsa_dev.c  ..Added sound device plughw:CARD=ALSA,DEV=1
+15:51:44.990     alsa_dev.c  ..Added sound device sysdefault:CARD=Dummy
+15:51:44.996     alsa_dev.c  ..Added sound device dmix:CARD=Dummy,DEV=0
+15:51:45.002     alsa_dev.c  ..Added sound device dsnoop:CARD=Dummy,DEV=0
+15:51:45.003     alsa_dev.c  ..Added sound device hw:CARD=Dummy,DEV=0
+15:51:45.004     alsa_dev.c  ..Added sound device plughw:CARD=Dummy,DEV=0
+15:51:45.004     alsa_dev.c  ..ALSA driver found 12 devices
+15:51:45.004     alsa_dev.c  ..ALSA initialized
+15:51:45.004          pjlib  ..select() I/O Queue created (0x18cebac)
+15:51:45.005   conference.c  ..Creating conference bridge with 254 ports
+15:51:45.005   Master/sound  ..Using delay buffer with WSOLA.
+15:51:45.050 sip_endpoint.c  .Module "mod-evsub" registered
+15:51:45.050 sip_endpoint.c  .Module "mod-presence" registered
+15:51:45.050        evsub.c  .Event pkg "presence" registered by mod-presence
+15:51:45.050 sip_endpoint.c  .Module "mod-mwi" registered
+15:51:45.050        evsub.c  .Event pkg "message-summary" registered by mod-mwi
+15:51:45.050 sip_endpoint.c  .Module "mod-refer" registered
+15:51:45.050        evsub.c  .Event pkg "refer" registered by mod-refer
+15:51:45.050 sip_endpoint.c  .Module "mod-pjsua-pres" registered
+15:51:45.051 sip_endpoint.c  .Module "mod-pjsua-im" registered
+15:51:45.051 sip_endpoint.c  .Module "mod-pjsua-options" registered
+15:51:45.051   pjsua_core.c  .1 SIP worker threads created
+15:51:45.051   pjsua_core.c  .pjsua version 2.6 for Linux-4.4.38/armv7l/glibc-2.19 initialized
+15:51:45.051   pjsua_core.c  .PJSUA state changed: CREATED --> INIT
+15:51:45.051 sip_endpoint.c  Module "mod-default-handler" registered
+15:51:45.051  utsx0x18af8e4 !STUN sending message (transmit count=2)
+15:51:45.051     stun_msg.c  .Unrecognized attribute type 0x802b
+15:51:45.051     stun_msg.c  .Unrecognized attribute type 0x802c
+15:51:45.052    stunresolve  .RX 112 bytes STUN message from 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding success response
+ Hdr: length=92, magic=2112a442, tsx_id=10587a4518f4315f0001221c
+ Attributes:
+  XOR-MAPPED-ADDRESS: length=8, IPv4 addr=192.168.77.2:47246
+  MAPPED-ADDRESS: length=8, IPv4 addr=192.168.77.2:47246
+  Attr 0x802b: length=8
+  Attr 0x802c: length=8
+  SOFTWARE: length=29, value="Citrix-3.2.4.6 'Marshal West'"
+  FINGERPRINT: length=4, value=1662537853 (0x6318507d)
+--- end of STUN message ---
+
+15:51:45.052    stunresolve  .STUN mapped address found/changed: 192.168.77.2:47246
+15:51:45.053    stunresolve  .STUN sock 0x18ac954 request, ref_cnt=8
+15:51:45.053    stunresolve  .STUN session 0x18adb7c destroy request, ref_cnt=8
+15:51:45.053  utsx0x18af8e4  .STUN client transaction 0x18af8e4 stopped, ref_cnt=9
+15:51:45.053   pjsua_core.c  .STUN resolution success, using town.nbplus.kr, address is 112.169.105.194:3478
+15:51:45.053 natck0x71a0046  .Local address is 192.168.77.174:58123
+15:51:45.053 natck0x71a0046  .Server set to 112.169.105.194:3478
+15:51:45.053 natck0x71a0046  .Performing Test I: Binding request to 112.169.105.194:3478
+15:51:45.053 natck0x71a0046  ..TX 28 bytes STUN message to 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding request
+ Hdr: length=8, magic=70d7e0b8, tsx_id=2c1efe4970e2239c00000000
+ Attributes:
+  CHANGE-REQUEST: length=4, value=0 (0x0)
+--- end of STUN message ---
+
+15:51:45.053 utsx0x71a027a4  ..STUN client transaction created
+15:51:45.053 utsx0x71a027a4  ..STUN sending message (transmit count=1)
+15:51:45.053 stun_session.c  .tdata 0x18af1f4 destroy request, force=0, tsx=0x18af8e4
+15:51:45.053  utsx0x18af8e4  .STUN transaction 0x18af8e4 schedule destroy
+15:51:45.088  stun_simple.c !Warning: unknown attr type 8022 in attr 3. Attribute was ignored.
+15:51:45.088   pjsua_core.c  SIP UDP socket reachable at 192.168.77.2:60444
+15:51:45.088   udp0x18e3170  SIP UDP transport started, published address is 192.168.77.2:60444
+15:51:45.088    pjsua_acc.c  Adding account: id=<sip:192.168.77.2:60444>
+15:51:45.088    pjsua_acc.c  .Account <sip:192.168.77.2:60444> added with id 0
+15:51:45.088    pjsua_acc.c  Modifying account 0
+15:51:45.088    pjsua_acc.c  Acc 0: setting online status to 1..
+15:51:45.088    pjsua_acc.c  Adding account: id=sip:1003@nbplus.co.kr:45060
+15:51:45.088 natck0x71a0046 !.RX 92 bytes STUN message from 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding success response
+ Hdr: length=72, magic=70d7e0b8, tsx_id=2c1efe4970e2239c00000000
+ Attributes:
+  MAPPED-ADDRESS: length=8, IPv4 addr=192.168.77.2:58820
+  SOURCE-ADDRESS: length=8, IPv4 addr=192.168.77.112:3478
+  CHANGED-ADDRESS: length=8, IPv4 addr=192.168.77.112:3479
+  SOFTWARE: length=32, value="Citrix-3.2.4.6 'Marshal West'"
+--- end of STUN message ---
+
+15:51:45.088 natck0x71a0046  .Completed Test I: Binding request, status=0
+15:51:45.088    pjsua_acc.c !.Account sip:1003@nbplus.co.kr:45060 added with id 1
+15:51:45.088 stun_session.c !.tdata 0x71a020cc destroy request, force=0, tsx=0x71a027a4
+15:51:45.088    pjsua_acc.c !.Acc 1: setting registration..
+15:51:45.088 utsx0x71a027a4 !.STUN transaction 0x71a027a4 schedule destroy
+15:51:45.089       endpoint !..Request msg REGISTER/cseq=27192 (tdta0x18e7908) created.
+15:51:45.089   tsx0x18e8974  ...Transaction created for Request msg REGISTER/cseq=27193 (tdta0x18e7908)
+15:51:45.089   tsx0x18e8974  ..Sending Request msg REGISTER/cseq=27193 (tdta0x18e7908) in state Null
+15:51:45.089  sip_resolve.c  ...DNS resolver not available, target 'town.nbplus.kr:45060' type=Unspecified will be resolved with getaddrinfo()
+15:51:45.103  sip_resolve.c  ...Target 'town.nbplus.kr:45060' type=Unspecified resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:51:45.103   pjsua_core.c  ...TX 593 bytes Request msg REGISTER/cseq=27193 (tdta0x18e7908) to UDP 112.169.105.194:45060:
+REGISTER sip:nbplus.co.kr:45060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.77.2:60444;rport;branch=z9hG4bKPjPXAveFOINLkq55Fwi1ul.PNDu69rDO8L
+Route: <sip:town.nbplus.kr:45060;lr>
+Max-Forwards: 70
+From: <sip:1003@nbplus.co.kr>;tag=LPDiyn79S1zn52VEMw1Ju36wPr3pqhI9
+To: <sip:1003@nbplus.co.kr>
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27193 REGISTER
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Contact: <sip:1003@192.168.77.2:60444;ob>;+sip.ice
+Expires: 3600
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Content-Length:  0
+
+
+--end msg--
+15:51:45.104   tsx0x18e8974  ...State changed from Null to Calling, event=TX_MSG
+15:51:45.104    pjsua_acc.c  ..Acc 1: Registration sent
+15:51:45.104    pjsua_acc.c  Acc 1: setting online status to 1..
+15:51:45.104    pjsua_aud.c  Set sound device: capture=-1, playback=0
+15:51:45.104    pjsua_app.c  .Turning sound device ON
+15:51:45.104    pjsua_aud.c  .Opening sound device (speaker + mic) PCM@48000/1/20ms
+15:51:45.104     alsa_dev.c !..open_playback: Open playback device 'sysdefault:CARD=ALSA'
+15:51:45.104 natck0x71a0046 !Performing Test II: Binding request with change address and port request to 112.169.105.194:3478
+15:51:45.104 natck0x71a0046 !.TX 28 bytes STUN message to 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding request
+ Hdr: length=8, magic=2183de48, tsx_id=1d60e72a4de7255b00000001
+ Attributes:
+  CHANGE-REQUEST: length=4, value=6 (0x6)
+--- end of STUN message ---
+
+15:51:45.104 utsx0x71a02f9c  .STUN client transaction created
+15:51:45.104 utsx0x71a02f9c  .STUN sending message (transmit count=1)
+15:51:45.109     alsa_dev.c !..Opened device alsa(sysdefault:CARD=ALSA) for playing, sample rate=48000, ch=1, bits=16, period size=960 frames, latency=140 ms
+15:51:45.109     alsa_dev.c  ..open_capture: Open capture device 'sysdefault:CARD=Dummy'
+15:51:45.111 sip_endpoint.c !Processing incoming message: Response msg 401/REGISTER/cseq=27193 (rdata0x18e47a4)
+15:51:45.111   pjsua_core.c  .RX 492 bytes Response msg 401/REGISTER/cseq=27193 (rdata0x18e47a4) from UDP 112.169.105.194:45060:
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.77.2:60444;received=192.168.77.2;rport=60444;branch=z9hG4bKPjPXAveFOINLkq55Fwi1ul.PNDu69rDO8L
+From: <sip:1003@nbplus.co.kr>;tag=LPDiyn79S1zn52VEMw1Ju36wPr3pqhI9
+To: <sip:1003@nbplus.co.kr>;tag=0e8ce9599534a703078094a86a5c880d.f8a2
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27193 REGISTER
+WWW-Authenticate: Digest realm="nbplus.co.kr", nonce="58996e9f000002076a4bce4f112790c753e0e2a5533134f8"
+Server: M2soft
+Content-Length: 0
+
+
+--end msg--
+15:51:45.112   tsx0x18e8974  .Incoming Response msg 401/REGISTER/cseq=27193 (rdata0x18e47a4) in state Calling
+15:51:45.112   tsx0x18e8974  ..State changed from Calling to Completed, event=RX_MSG
+15:51:45.113     alsa_dev.c !..Opened device alsa(sysdefault:CARD=Dummy) for capture, sample rate=48000, ch=1, bits=16, period size=960 frames, latency=100 ms
+15:51:45.114    ec0x18d2318  ..Creating AEC
+15:51:45.120    ec0x18d2318  ..AEC created, clock_rate=48000, channel=1, samples per frame=960, tail length=200 ms, latency=0 ms
+15:51:45.121   pjsua_core.c  PJSUA state changed: INIT --> STARTING
+15:51:45.121     alsa_dev.c !ca_thread_func(10793): Set thread priority for audio capture thread.
+15:51:45.121     alsa_dev.c  Unable to increase thread priority, root access needed.
+15:51:45.121  tsx0x71a034c4 !....Transaction created for Request msg REGISTER/cseq=27194 (tdta0x18e7908)
+15:51:45.121  tsx0x71a034c4  ...Sending Request msg REGISTER/cseq=27194 (tdta0x18e7908) in state Null
+15:51:45.121       endpoint  ....Request msg REGISTER/cseq=27194 (tdta0x18e7908): skipping target resolution because address is already set
+15:51:45.122   pjsua_core.c  ....TX 787 bytes Request msg REGISTER/cseq=27194 (tdta0x18e7908) to UDP 112.169.105.194:45060:
+REGISTER sip:nbplus.co.kr:45060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.77.2:60444;rport;branch=z9hG4bKPjn1oeakJOvl4CV3R3-4Vw2Aa7gI0mB.rj
+Route: <sip:town.nbplus.kr:45060;lr>
+Max-Forwards: 70
+From: <sip:1003@nbplus.co.kr>;tag=LPDiyn79S1zn52VEMw1Ju36wPr3pqhI9
+To: <sip:1003@nbplus.co.kr>
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27194 REGISTER
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Contact: <sip:1003@192.168.77.2:60444;ob>;+sip.ice
+Expires: 3600
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Authorization: Digest username="1003", realm="nbplus.co.kr", nonce="58996e9f000002076a4bce4f112790c753e0e2a5533134f8", uri="sip:nbplus.co.kr:45060", response="493228348ebbef38ddcadb7a67e2258c"
+Content-Length:  0
+
+
+--end msg--
+15:51:45.122  tsx0x71a034c4  ....State changed from Null to Calling, event=TX_MSG
+15:51:45.122          speex !warning: discarded first playback frame
+15:51:45.122 sip_endpoint.c !.Module "mod-unsolicited-mwi" registered
+15:51:45.122   pjsua_core.c  .PJSUA state changed: STARTING --> RUNNING
+15:51:45.122         main.c  Ready: Success
+15:51:45.122          speex !warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.123          speex  warning: discarded first playback frame
+15:51:45.139 sip_endpoint.c !Processing incoming message: Response msg 200/REGISTER/cseq=27194 (rdata0x71a03e84)
+15:51:45.139   pjsua_core.c  .RX 467 bytes Response msg 200/REGISTER/cseq=27194 (rdata0x71a03e84) from UDP 112.169.105.194:45060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.77.2:60444;received=192.168.77.2;rport=60444;branch=z9hG4bKPjn1oeakJOvl4CV3R3-4Vw2Aa7gI0mB.rj
+From: <sip:1003@nbplus.co.kr>;tag=LPDiyn79S1zn52VEMw1Ju36wPr3pqhI9
+To: <sip:1003@nbplus.co.kr>;tag=0e8ce9599534a703078094a86a5c880d.e475
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27194 REGISTER
+Contact: <sip:1003@192.168.77.2:60444;ob>;expires=3600;received="sip:192.168.77.2:60444"
+Server: M2soft
+Content-Length: 0
+
+
+--end msg--
+15:51:45.139  tsx0x71a034c4  .Incoming Response msg 200/REGISTER/cseq=27194 (rdata0x71a03e84) in state Calling
+15:51:45.139  tsx0x71a034c4  ..State changed from Calling to Completed, event=RX_MSG
+15:51:45.139    pjsua_acc.c  ....SIP outbound status for acc 1 is not active
+15:51:45.139    pjsua_acc.c  ....sip:1003@nbplus.co.kr:45060: registration success, status=200 (OK), will re-register in 3600 seconds
+15:51:45.139    pjsua_acc.c  ....Keep-alive timer started for acc 1, destination:112.169.105.194:45060, interval:15s
+15:51:45.155 natck0x71a0046  Performing Test III: Binding request with change port request to 112.169.105.194:3478
+15:51:45.155 natck0x71a0046  .TX 28 bytes STUN message to 112.169.105.194:3478:
+--- begin STUN message ---
+STUN Binding request
+ Hdr: length=8, magic=79e4cf4f, tsx_id=28f82c862a1a7dd600000002
+ Attributes:
+  CHANGE-REQUEST: length=4, value=2 (0x2)
+--- end of STUN message ---
+
+15:51:45.155 utsx0x71a064f4  .STUN client transaction created
+15:51:45.155 utsx0x71a064f4  .STUN sending message (transmit count=1)
+15:51:45.204 utsx0x71a02f9c  STUN sending message (transmit count=2)
+15:51:45.255 utsx0x71a064f4  STUN sending message (transmit count=2)
+15:51:45.353  utsx0x18af8e4  STUN client transaction 0x18af8e4 stopped, ref_cnt=1
+15:51:45.353 stun_session.c  STUN transaction 0x18af8e4 destroyed
+15:51:45.353                 STUN sock 0x18ac954 destroyed
+15:51:45.353 stun_session.c  STUN session 0x18adb7c destroyed
+15:51:45.389 utsx0x71a027a4  STUN client transaction 0x71a027a4 stopped, ref_cnt=6
+15:51:45.389 stun_session.c  STUN transaction 0x71a027a4 destroyed
+15:51:45.404 utsx0x71a02f9c  STUN sending message (transmit count=3)
+15:51:45.456 utsx0x71a064f4  STUN sending message (transmit count=3)
+15:51:45.805 utsx0x71a02f9c  STUN sending message (transmit count=4)
+15:51:45.856 utsx0x71a064f4  STUN sending message (transmit count=4)
+15:51:46.121    pjsua_aud.c  Closing sound device after idle for 1 second(s)
+15:51:46.122    pjsua_app.c  .Turning sound device OFF
+15:51:46.122    pjsua_aud.c  .Closing sysdefault:CARD=ALSA sound playback device and sysdefault:CARD=Dummy sound capture device
+15:51:46.605 utsx0x71a02f9c  STUN sending message (transmit count=5)
+15:51:46.656 utsx0x71a064f4  STUN sending message (transmit count=5)
+15:51:46.763 sip_endpoint.c  Processing incoming message: Request msg OPTIONS/cseq=1 (rdata0x71a03e84)
+15:51:46.764   pjsua_core.c  .RX 281 bytes Request msg OPTIONS/cseq=1 (rdata0x71a03e84) from UDP 112.169.105.194:45060:
+OPTIONS sip:192.168.77.2:60444 SIP/2.0
+Via: SIP/2.0/UDP 112.169.105.194:45060;branch=z9hG4bK5404538
+From: sip:pinger@192.168.77.112;tag=b7150b1
+To: sip:192.168.77.2:60444
+Call-ID: 7704ba7-b247c9e6-a9b921@112.169.105.194
+CSeq: 1 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+
+
+--end msg--
+15:51:46.764       endpoint  .Response msg 200/OPTIONS/cseq=1 (tdta0x71a065b0) created
+15:51:46.764  sip_resolve.c  .Target '112.169.105.194:45060' type=UDP resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:51:46.764   pjsua_core.c  .TX 710 bytes Response msg 200/OPTIONS/cseq=1 (tdta0x71a065b0) to UDP 112.169.105.194:45060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 112.169.105.194:45060;received=112.169.105.194;branch=z9hG4bK5404538
+Call-ID: 7704ba7-b247c9e6-a9b921@112.169.105.194
+From: <sip:pinger@192.168.77.112>;tag=b7150b1
+To: <sip:192.168.77.2>;tag=z9hG4bK5404538
+CSeq: 1 OPTIONS
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Accept: application/sdp, application/pidf+xml, application/xpidf+xml, application/simple-message-summary, message/sipfrag;version=2.0, application/im-iscomposing+xml, text/plain
+Supported: replaces, 100rel, timer, norefersub
+Allow-Events: presence, message-summary, refer
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Content-Length:  0
+
+
+--end msg--
+15:51:46.764 tdta0x71a065b0  .Destroying txdata Response msg 200/OPTIONS/cseq=1 (tdta0x71a065b0)
+15:51:48.206 utsx0x71a02f9c  STUN sending message (transmit count=6)
+15:51:48.255 utsx0x71a064f4  STUN sending message (transmit count=6)
+15:51:50.122   tsx0x18e8974  Timeout timer event
+15:51:50.122   tsx0x18e8974  .State changed from Completed to Terminated, event=TIMER
+15:51:50.123   tsx0x18e8974  Timeout timer event
+15:51:50.123   tsx0x18e8974  .State changed from Terminated to Destroyed, event=TIMER
+15:51:50.123   tsx0x18e8974  Transaction destroyed!
+15:51:50.139  tsx0x71a034c4  Timeout timer event
+15:51:50.139  tsx0x71a034c4  .State changed from Completed to Terminated, event=TIMER
+15:51:50.139  tsx0x71a034c4  Timeout timer event
+15:51:50.139  tsx0x71a034c4  .State changed from Terminated to Destroyed, event=TIMER
+15:51:50.139  tdta0x18e7908  ..Destroying txdata Request msg REGISTER/cseq=27194 (tdta0x18e7908)
+15:51:50.139  tsx0x71a034c4  Transaction destroyed!
+15:51:51.407 utsx0x71a02f9c  STUN sending message (transmit count=7)
+15:51:51.455 utsx0x71a064f4  STUN sending message (transmit count=7)
+15:51:53.007 utsx0x71a02f9c  STUN timeout waiting for response
+15:51:53.007 natck0x71a0046  .Completed Test II: Binding request with change address and port request, status=370004
+15:51:53.007 natck0x71a0046  .Performing Test IB: Binding request to alternate address to 192.168.77.112:3479
+15:51:53.007 natck0x71a0046  ..TX 28 bytes STUN message to 192.168.77.112:3479:
+--- begin STUN message ---
+STUN Binding request
+ Hdr: length=8, magic=1ff51377, tsx_id=43c956677361e25100000003
+ Attributes:
+  CHANGE-REQUEST: length=4, value=0 (0x0)
+--- end of STUN message ---
+
+15:51:53.007 utsx0x71a027a4  ..STUN client transaction created
+15:51:53.007 utsx0x71a027a4  ..STUN sending message (transmit count=1)
+15:51:53.007 stun_session.c  .tdata 0x71a028c4 destroy request, force=1, tsx=0x71a02f9c
+15:51:53.007 utsx0x71a02f9c  .STUN client transaction 0x71a02f9c stopped, ref_cnt=8
+15:51:53.014 natck0x71a0046  .RX 92 bytes STUN message from 192.168.77.112:3479:
+--- begin STUN message ---
+STUN Binding success response
+ Hdr: length=72, magic=1ff51377, tsx_id=43c956677361e25100000003
+ Attributes:
+  MAPPED-ADDRESS: length=8, IPv4 addr=192.168.77.174:58820
+  SOURCE-ADDRESS: length=8, IPv4 addr=192.168.77.112:3479
+  CHANGED-ADDRESS: length=8, IPv4 addr=192.168.77.112:3478
+  SOFTWARE: length=32, value="Citrix-3.2.4.6 'Marshal West'"
+--- end of STUN message ---
+
+15:51:53.014 natck0x71a0046  .Completed Test IB: Binding request to alternate address, status=0
+15:51:53.014 stun_session.c  .tdata 0x71a020cc destroy request, force=0, tsx=0x71a027a4
+15:51:53.014 utsx0x71a027a4  .STUN transaction 0x71a027a4 schedule destroy
+15:51:53.056 utsx0x71a064f4  STUN timeout waiting for response
+15:51:53.056 natck0x71a0046  .Completed Test III: Binding request with change port request, status=370004
+15:51:53.056    pjsua_app.c  .NAT detected as Symmetric
+15:51:53.056 stun_session.c  .tdata 0x71a05e1c destroy request, force=1, tsx=0x71a064f4
+15:51:53.056 utsx0x71a064f4  .STUN client transaction 0x71a064f4 stopped, ref_cnt=7
+15:51:53.056 natck0x71a0046  STUN session 0x71a0149c destroy request, ref_cnt=3
+15:51:53.056 utsx0x71a027a4  STUN client transaction 0x71a027a4 stopped, ref_cnt=3
+15:51:53.056 stun_session.c  tdata 0x71a020cc destroy request, force=1, tsx=0x71a027a4
+15:51:53.056 utsx0x71a027a4  STUN client transaction 0x71a027a4 stopped, ref_cnt=0
+15:51:53.056 stun_session.c  STUN session 0x71a0149c destroyed
+15:52:00.139    pjsua_acc.c  Sending 2 bytes keep-alive packet for acc 1 to 112.169.105.194:45060
+15:52:00.139 tdta0x71a00468  Destroying txdata raw
+15:52:06.786 sip_endpoint.c  Processing incoming message: Request msg OPTIONS/cseq=1 (rdata0x71a03e84)
+15:52:06.786   pjsua_core.c  .RX 281 bytes Request msg OPTIONS/cseq=1 (rdata0x71a03e84) from UDP 112.169.105.194:45060:
+OPTIONS sip:192.168.77.2:60444 SIP/2.0
+Via: SIP/2.0/UDP 112.169.105.194:45060;branch=z9hG4bK8401542
+From: sip:pinger@192.168.77.112;tag=c7150b1
+To: sip:192.168.77.2:60444
+Call-ID: 7704ba7-c247c9e6-eab921@112.169.105.194
+CSeq: 1 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+
+
+--end msg--
+15:52:06.786       endpoint  .Response msg 200/OPTIONS/cseq=1 (tdta0x71a00468) created
+15:52:06.786  sip_resolve.c  .Target '112.169.105.194:45060' type=UDP resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:52:06.786   pjsua_core.c  .TX 710 bytes Response msg 200/OPTIONS/cseq=1 (tdta0x71a00468) to UDP 112.169.105.194:45060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 112.169.105.194:45060;received=112.169.105.194;branch=z9hG4bK8401542
+Call-ID: 7704ba7-c247c9e6-eab921@112.169.105.194
+From: <sip:pinger@192.168.77.112>;tag=c7150b1
+To: <sip:192.168.77.2>;tag=z9hG4bK8401542
+CSeq: 1 OPTIONS
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Accept: application/sdp, application/pidf+xml, application/xpidf+xml, application/simple-message-summary, message/sipfrag;version=2.0, application/im-iscomposing+xml, text/plain
+Supported: replaces, 100rel, timer, norefersub
+Allow-Events: presence, message-summary, refer
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Content-Length:  0
+
+
+--end msg--
+15:52:06.786 tdta0x71a00468  .Destroying txdata Response msg 200/OPTIONS/cseq=1 (tdta0x71a00468)
+15:52:15.139    pjsua_acc.c  Sending 2 bytes keep-alive packet for acc 1 to 112.169.105.194:45060
+15:52:15.139 tdta0x71a03460  Destroying txdata raw
+15:52:26.805 sip_endpoint.c  Processing incoming message: Request msg OPTIONS/cseq=1 (rdata0x71a0047c)
+15:52:26.805   pjsua_core.c  .RX 281 bytes Request msg OPTIONS/cseq=1 (rdata0x71a0047c) from UDP 112.169.105.194:45060:
+OPTIONS sip:192.168.77.2:60444 SIP/2.0
+Via: SIP/2.0/UDP 112.169.105.194:45060;branch=z9hG4bK9121602
+From: sip:pinger@192.168.77.112;tag=d7150b1
+To: sip:192.168.77.2:60444
+Call-ID: 7704ba7-d247c9e6-2cb921@112.169.105.194
+CSeq: 1 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+
+
+--end msg--
+15:52:26.805       endpoint  .Response msg 200/OPTIONS/cseq=1 (tdta0x71a03460) created
+15:52:26.805  sip_resolve.c  .Target '112.169.105.194:45060' type=UDP resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:52:26.805   pjsua_core.c  .TX 710 bytes Response msg 200/OPTIONS/cseq=1 (tdta0x71a03460) to UDP 112.169.105.194:45060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 112.169.105.194:45060;received=112.169.105.194;branch=z9hG4bK9121602
+Call-ID: 7704ba7-d247c9e6-2cb921@112.169.105.194
+From: <sip:pinger@192.168.77.112>;tag=d7150b1
+To: <sip:192.168.77.2>;tag=z9hG4bK9121602
+CSeq: 1 OPTIONS
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Accept: application/sdp, application/pidf+xml, application/xpidf+xml, application/simple-message-summary, message/sipfrag;version=2.0, application/im-iscomposing+xml, text/plain
+Supported: replaces, 100rel, timer, norefersub
+Allow-Events: presence, message-summary, refer
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Content-Length:  0
+
+
+--end msg--
+15:52:26.805 tdta0x71a03460  .Destroying txdata Response msg 200/OPTIONS/cseq=1 (tdta0x71a03460)
+15:52:30.139    pjsua_acc.c  Sending 2 bytes keep-alive packet for acc 1 to 112.169.105.194:45060
+15:52:30.139 tdta0x71a03460  Destroying txdata raw
+15:52:45.140    pjsua_acc.c  Sending 2 bytes keep-alive packet for acc 1 to 112.169.105.194:45060
+15:52:45.140 tdta0x71a03460  Destroying txdata raw
+15:52:46.368   pjsua_core.c !Shutting down, flags=0...
+15:52:46.368   pjsua_core.c  PJSUA state changed: RUNNING --> CLOSING
+15:52:46.370   pjsua_call.c  .Hangup all calls..
+15:52:46.370  pjsua_media.c  .Call 0: deinitializing media..
+15:52:46.370  pjsua_media.c  .Call 1: deinitializing media..
+15:52:46.370  pjsua_media.c  .Call 2: deinitializing media..
+15:52:46.370  pjsua_media.c  .Call 3: deinitializing media..
+15:52:46.370   pjsua_pres.c  .Shutting down presence..
+15:52:46.370    pjsua_acc.c  .Acc 1: setting unregistration..
+15:52:46.370       endpoint  ..Request msg REGISTER/cseq=27194 (tdta0x18ac838) created.
+15:52:46.371   tsx0x18a8a5c  ...Transaction created for Request msg REGISTER/cseq=27195 (tdta0x18ac838)
+15:52:46.371   tsx0x18a8a5c  ..Sending Request msg REGISTER/cseq=27195 (tdta0x18ac838) in state Null
+15:52:46.371  sip_resolve.c  ...DNS resolver not available, target 'town.nbplus.kr:45060' type=Unspecified will be resolved with getaddrinfo()
+15:52:46.382  sip_resolve.c  ...Target 'town.nbplus.kr:45060' type=Unspecified resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:52:46.382   pjsua_core.c  ...TX 492 bytes Request msg REGISTER/cseq=27195 (tdta0x18ac838) to UDP 112.169.105.194:45060:
+REGISTER sip:nbplus.co.kr:45060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.77.2:60444;rport;branch=z9hG4bKPj4Ek57gho2jjY3z3gXjLeE3nJAi7xM42t
+Route: <sip:town.nbplus.kr:45060;lr>
+Max-Forwards: 70
+From: <sip:1003@nbplus.co.kr>;tag=OfT4rH-GvHMDHhWyF62.kT.i2D3SOIqi
+To: <sip:1003@nbplus.co.kr>
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27195 REGISTER
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Contact: <sip:1003@192.168.77.2:60444;ob>;+sip.ice
+Expires: 0
+Content-Length:  0
+
+
+--end msg--
+15:52:46.382   tsx0x18a8a5c  ...State changed from Null to Calling, event=TX_MSG
+15:52:46.382    pjsua_acc.c  ..Acc 1: Unregistration sent
+15:52:46.385 sip_endpoint.c  .Processing incoming message: Response msg 401/REGISTER/cseq=27195 (rdata0x71a0047c)
+15:52:46.385   pjsua_core.c  ..RX 492 bytes Response msg 401/REGISTER/cseq=27195 (rdata0x71a0047c) from UDP 112.169.105.194:45060:
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.77.2:60444;received=192.168.77.2;rport=60444;branch=z9hG4bKPj4Ek57gho2jjY3z3gXjLeE3nJAi7xM42t
+From: <sip:1003@nbplus.co.kr>;tag=OfT4rH-GvHMDHhWyF62.kT.i2D3SOIqi
+To: <sip:1003@nbplus.co.kr>;tag=0e8ce9599534a703078094a86a5c880d.6679
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27195 REGISTER
+WWW-Authenticate: Digest realm="nbplus.co.kr", nonce="58996edc0000020812d183aa9377687f083ef36b8c395f86"
+Server: M2soft
+Content-Length: 0
+
+
+--end msg--
+15:52:46.385   tsx0x18a8a5c  ..Incoming Response msg 401/REGISTER/cseq=27195 (rdata0x71a0047c) in state Calling
+15:52:46.385   tsx0x18a8a5c  ...State changed from Calling to Completed, event=RX_MSG
+15:52:46.385   tsx0x18ad8a4  .....Transaction created for Request msg REGISTER/cseq=27196 (tdta0x18ac838)
+15:52:46.385   tsx0x18ad8a4  ....Sending Request msg REGISTER/cseq=27196 (tdta0x18ac838) in state Null
+15:52:46.385       endpoint  .....Request msg REGISTER/cseq=27196 (tdta0x18ac838): skipping target resolution because address is already set
+15:52:46.385   pjsua_core.c  .....TX 686 bytes Request msg REGISTER/cseq=27196 (tdta0x18ac838) to UDP 112.169.105.194:45060:
+REGISTER sip:nbplus.co.kr:45060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.77.2:60444;rport;branch=z9hG4bKPjsPAQtjRasmlGm9CyNlIBroFBNFi2zYIt
+Route: <sip:town.nbplus.kr:45060;lr>
+Max-Forwards: 70
+From: <sip:1003@nbplus.co.kr>;tag=OfT4rH-GvHMDHhWyF62.kT.i2D3SOIqi
+To: <sip:1003@nbplus.co.kr>
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27196 REGISTER
+User-Agent: PJSUA v2.6 Linux-4.4.38/armv7l/glibc-2.19
+Contact: <sip:1003@192.168.77.2:60444;ob>;+sip.ice
+Expires: 0
+Authorization: Digest username="1003", realm="nbplus.co.kr", nonce="58996edc0000020812d183aa9377687f083ef36b8c395f86", uri="sip:nbplus.co.kr:45060", response="5876300e6785592d96f5efa48016a5d0"
+Content-Length:  0
+
+
+--end msg--
+15:52:46.385   tsx0x18ad8a4  .....State changed from Null to Calling, event=TX_MSG
+15:52:46.389 sip_endpoint.c  .Processing incoming message: Response msg 200/REGISTER/cseq=27196 (rdata0x18dfe94)
+15:52:46.389   pjsua_core.c  ..RX 377 bytes Response msg 200/REGISTER/cseq=27196 (rdata0x18dfe94) from UDP 112.169.105.194:45060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.77.2:60444;received=192.168.77.2;rport=60444;branch=z9hG4bKPjsPAQtjRasmlGm9CyNlIBroFBNFi2zYIt
+From: <sip:1003@nbplus.co.kr>;tag=OfT4rH-GvHMDHhWyF62.kT.i2D3SOIqi
+To: <sip:1003@nbplus.co.kr>;tag=0e8ce9599534a703078094a86a5c880d.e891
+Call-ID: D17tUohCcq5xLGeKCywoB3iuSdx69-sB
+CSeq: 27196 REGISTER
+Server: M2soft
+Content-Length: 0
+
+
+--end msg--
+15:52:46.390   tsx0x18ad8a4  ..Incoming Response msg 200/REGISTER/cseq=27196 (rdata0x18dfe94) in state Calling
+15:52:46.390   tsx0x18ad8a4  ...State changed from Calling to Completed, event=RX_MSG
+15:52:46.390    pjsua_acc.c  .....sip:1003@nbplus.co.kr:45060: unregistration success
+15:52:46.826 sip_endpoint.c  .Processing incoming message: Request msg OPTIONS/cseq=1 (rdata0x18dfe94)
+15:52:46.826   pjsua_core.c  ..RX 281 bytes Request msg OPTIONS/cseq=1 (rdata0x18dfe94) from UDP 112.169.105.194:45060:
+OPTIONS sip:192.168.77.2:60444 SIP/2.0
+Via: SIP/2.0/UDP 112.169.105.194:45060;branch=z9hG4bK8883116
+From: sip:pinger@192.168.77.112;tag=e7150b1
+To: sip:192.168.77.2:60444
+Call-ID: 7704ba7-e247c9e6-6db921@112.169.105.194
+CSeq: 1 OPTIONS
+Max-Forwards: 70
+Content-Length: 0
+
+
+--end msg--
+15:52:46.826       endpoint  ..Response msg 480/OPTIONS/cseq=1 (tdta0x18e1dc8) created
+15:52:46.826  sip_resolve.c  ..Target '112.169.105.194:45060' type=UDP resolved to '112.169.105.194:45060' type=UDP (UDP transport)
+15:52:46.826   pjsua_core.c  ..TX 303 bytes Response msg 480/OPTIONS/cseq=1 (tdta0x18e1dc8) to UDP 112.169.105.194:45060:
+SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 112.169.105.194:45060;received=112.169.105.194;branch=z9hG4bK8883116
+Call-ID: 7704ba7-e247c9e6-6db921@112.169.105.194
+From: <sip:pinger@192.168.77.112>;tag=e7150b1
+To: <sip:192.168.77.2>;tag=z9hG4bK8883116
+CSeq: 1 OPTIONS
+Content-Length:  0
+
+
+--end msg--
+15:52:46.827  tdta0x18e1dc8  ..Destroying txdata Response msg 480/OPTIONS/cseq=1 (tdta0x18e1dc8)
+15:52:47.391   pjsua_core.c  .Destroying...
+15:52:47.391  pjsua_media.c  .Shutting down media..
+15:52:47.516 sip_endpoint.c  .Destroying endpoing instance..
+15:52:47.516 sip_transactio  .Stopping transaction layer module
+15:52:47.516   tsx0x18a8a5c  .Request to terminate transaction
+15:52:47.516   tsx0x18a8a5c  ..State changed from Completed to Terminated, event=USER
+15:52:47.516   tsx0x18a8a5c  .Transaction destroyed!
+15:52:47.516   tsx0x18ad8a4  .Request to terminate transaction
+15:52:47.516   tsx0x18ad8a4  ..State changed from Completed to Terminated, event=USER
+15:52:47.517  tdta0x18ac838  .Destroying txdata Request msg REGISTER/cseq=27196 (tdta0x18ac838)
+15:52:47.517   tsx0x18ad8a4  .Transaction destroyed!
+15:52:47.517 sip_transactio  .Stopped transaction layer module
+15:52:47.517 sip_endpoint.c  .Module "mod-default-handler" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-unsolicited-mwi" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-pjsua-options" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-pjsua-im" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-pjsua-pres" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-pjsua" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-stateful-util" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-refer" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-mwi" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-presence" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-evsub" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-invite" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-100rel" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-ua" unregistered
+15:52:47.517 sip_transactio  .Transaction layer module destroyed
+15:52:47.517 sip_endpoint.c  .Module "mod-tsx-layer" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-msg-print" unregistered
+15:52:47.517 sip_endpoint.c  .Module "mod-pjsua-log" unregistered
+15:52:47.517 sip_transport.  .Destroying transport manager
+15:52:47.519   udp0x18e3170  .SIP UDP transport destroyed
+15:52:47.519 sip_endpoint.c  .Endpoint 0x189ce4c destroyed
+15:52:47.519   pjsua_core.c  .PJSUA state changed: CLOSING --> NULL
+15:52:47.519   pjsua_core.c  .PJSUA destroyed...
