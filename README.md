@@ -1,3 +1,7 @@
+#<center>라즈베리 파이에 마을방송 설치 가이드</center>
+---------
+<br>
+
 ## Prerequisite
 
 #### 0. Raspberry pi 3 설치 
@@ -43,6 +47,30 @@
 <br>
 
 ## Media application compile
+
+#### 1. node, npm 및 electron 설치 
+* $> mkdir Development
+* $> cd Development
+* $> curl -sL https://deb.nodesource.com/setup_6.x -o ~/nodesource_setup.sh
+* $> sudo bash ~/nodesource_setup.sh
+* $> sudo apt-get install nodejs build-essential
+* $> sudo npm install -g electron
+
+#### 2. electron에서 구동되는 '마을방송' 전용수신 앱 
+* $> git clone  http://basagee@gitblit.basagee.tk/r/node/node\_rasp\_broadcast.git 
+* $> cd node\_rasp\_broadcast
+* $> npm install
+* 실행 확인 
+    * $> npm test
+    * 정상 설치되었으면 종료 
+
+#### 3. pjsip-app(방송재생 앱) 설치 
+* $> cd node\_rasp\_broadcast
+* ./build_media_app.sh
+* 실행 확인 
+    * $> ./pjsua-armv7l-unknown-linux-gnueabihf
+    * 실행후에 sip regi 등의 로그와 메뉴화면이 정상 출력되는지 확인한다. 
+    * 정상 설치되었으면 종료 
 
 9 pjsip 설치
 	- 압축파일을 해제 
@@ -105,7 +133,7 @@
 	- conference URL을 가지고 접속을 한다.
 	- pjsip 에서 엔터를 치면 사용가능한 명령셋들이 나옴.
 	- 전화를 걸기위해서는 m을 입력 (방송 URL을 입력하라고 나옴)
-	- "sip: brc01@nbplus.co.kr" 와 같이 방송 URL을 입력하고 엔터를 입력하면 연결이됨
+	- "sip:5ba8f9e1f443d91d525ac76aad914f1cea11c36e@nbplus.co.kr" 와 같이 방송 URL을 입력하고 엔터를 입력하면 연결이됨
 	   brc01부분만 변경하면 됨...
 
 실제로 소리가 나오는지 체크하면 됨.
