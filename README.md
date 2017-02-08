@@ -133,7 +133,7 @@
 	- conference URL을 가지고 접속을 한다.
 	- pjsip 에서 엔터를 치면 사용가능한 명령셋들이 나옴.
 	- 전화를 걸기위해서는 m을 입력 (방송 URL을 입력하라고 나옴)
-	- "sip:5ba8f9e1f443d91d525ac76aad914f1cea11c36e@nbplus.co.kr" 와 같이 방송 URL을 입력하고 엔터를 입력하면 연결이됨
-	   brc01부분만 변경하면 됨...
+	- "sip:brcxxxx@nbplus.co.kr" 와 같이 방송 URL을 입력하고 엔터를 입력하면 연결이됨
+	   xxxx부분이 방 ID 값...
 
 실제로 소리가 나오는지 체크하면 됨.
